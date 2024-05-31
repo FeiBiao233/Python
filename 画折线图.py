@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-
+#test a change
 # 假设这些是您的扭矩和应变数据
 torques = [10, 20, 30, 40, 50]  # 扭矩数据
 strains = [0.1, 0.2, 0.3, 0.4, 0.5]  # 应变数据
