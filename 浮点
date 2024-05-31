@@ -1,0 +1,6 @@
+浮点计算在计算机中有时导致不精确
+解决办法 引入模块demicial
+
+from decimal import Decimal
+print(Decimal('1.1')+Decimal('2.2'))
+ 目前暂时还无法理解(注意字符串)

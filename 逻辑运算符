@@ -1,0 +1,35 @@
+
+> < >= <= != == 返回一个bool
+以上比较的是值 (值相同的变量一般标识相同，即id)
+数组的就算值相同id也不能相同 所以两个相同数组id不同
+
+使用is ,is not 比较 id 记得用空格分隔开来
+is 标识相同报true
+is not 标识相反报True
+
+a=78
+b=79
+print(a is not b) 这个 报True
+
+lst1=['hello','baby']
+lst2=['hello','baby']
+lst1 is lst2  报False 因为列表就算完全一样标识也是不一样的
+bool的运算符
+and 两个为True才是True
+or 一个为True就是True
+not 取反
+in 和not in 用于字符串和列表 看字符在不在字符串里面 
+如 a=str('nmsl')
+'nmsl' in a=True
+nmms not in a=True 
+
+位运算 用于数字 转为二进制处理 八位 不足的用0补齐 
+& 上下两位都是1才是1
+| 上下两位都是0才是0 （类比and和or）
+<<二进制左移n位 高位溢出 约等于乘二
+>> 右移动n位 高位补零 低位溢出 约等于除以2
+
+运算符的优先级问题
+先算数运算 在位运算 再比较运算
+再是几个bool运算 and or in 之类的
+最后赋值运算

@@ -1,0 +1,2 @@
+lst=[[0 for x in range]for y in range]
+这样就非常方便了

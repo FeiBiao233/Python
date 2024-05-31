@@ -1,0 +1,8 @@
+直接使用等号复制 非常方便
+如 name='tuffy' str
+   number=12 int
+   num=True True False 首字母记得大写 bool
+   numb=3.113 float
+几个函数
+id(name) 使用这个获取内存地址
+type(name) 获取变量类型

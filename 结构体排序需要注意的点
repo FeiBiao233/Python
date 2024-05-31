@@ -1,0 +1,4 @@
+最重要的一点 python中是elif
+不要忘了 from functools import cmp_to_key
+在cmp中，return 1代表调换 return -1代表不调换
+排序时这样写lst.sort(key=cmp_to_key(cmp))

@@ -1,0 +1,32 @@
+from selectors import EpollSelector
+
+
+使用range()创建数列
+range(start,stop,step) 部分可以省略
+stop的数字不包括 start 包括
+range()的结果是迭代器对象 需要套list()来查看数列
+如果不用 range()内的东西不计算 相当于只是把算式写出来
+
+while a<=10:
+    a+=1
+
+a=int(input())
+b=float(input())
+c=0
+while a<=b:
+    c=c+a
+    a+=1
+print(c)
+
+for item in sth 从后面的那个依次取出一些什么 字符串 range 数列之类的
+配合range使用
+如果item这个东西不需要 用下划线代替
+
+break 跳出循环 continue 不管还未执行的，直接进入下一循环
+else 在for 和while 中 如果循环没有break 所有正常的循环执行完后就会执行else 
+for i in range(3):
+    pass
+    break
+else:
+    print('else语句被执行')
+ 

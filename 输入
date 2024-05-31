@@ -1,0 +1,14 @@
+输入函数 input() 输入的是str 中间单引号可以放提问
+如input('请输入数字')
+区别：print想当于一个动作 input()想当与一个字符串的值
+
+如最简单的a+b
+a=input()
+b=input()
+print(int(a)+int(b))
+
+最快速的输入数字 a=int(input())
+
+注意，这样的输入是以回车作为分隔的
+要用空格作为分隔 a,b=map(int,input().split())
+或者使用逗号分隔 a,b=map(int,input().split(','))

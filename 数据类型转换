@@ -1,0 +1,9 @@
+str() int() float()
+
+int() 把浮点的小数抹掉
+
+只有字符串为数字串是 才能把str转为int 不能是小数
+正确:int('78') 错误：int('78.77')
+float() 同理
+
+bool转成str时 True就是True

@@ -1,0 +1,54 @@
+用花括号
+类似于c的struct
+是一个无序的不可变序列 PS：3.6之后有序 但是让然是按hash值来排的
+常见的不可变序列：str和int
+可变：列表 字典
+
+查字典：1。一个一个找
+2. 在字典中创造一个索引，然后快速找到
+
+定义一个字典
+1.scores={'张三':100,'李四'：98}
+2.dict(name='jack',age = 20)
+使用dict() key就只能用字符串
+获取字典中的元素
+1.方括号 scores['张三'] 或者scores.get('张三')
+一个找不到会返回KeyError 另一个找不到会返回一个默认的Key或者None 
+让get()返回一个默认值
+print(scores.get('马琪',99)) 这样找不到就会返回99了
+字典中的张三想当与Key（索引？） 而后面是连接的数字
+
+字典的作用：想当与在字符串和整数中间建立一个桥梁
+str和int互相转换 都可以做key或者value
+
+字典的常用操作
+in not in 判断key是否在
+删除 del scores['张三'] 或者scores.clear() 清空
+新增/修改 scores['jack']=90 值可以修改 但是键不能修改
+
+获取字典视图的方法
+keys() 获取key
+values 获取value
+items() 全部获取
+
+以keys()作为例子
+scores={'张三':100,'李四'：98}
+keys=scores.keys()
+print(keys)
+这样就会打印出所有的key，然后keys的数据类型是dict_keys
+dict_keys可以无缝转换成list
+
+遍历 
+scores={90:'T','F':100}
+for i in scores:
+    print(i)
+这样遍历的就是keys
+
+字典会浪费内存 是用空间换时间
+
+字典生成式 使用zip()把两个列表的东西压缩成为一个字典
+items=['Fruits','Books','Others']
+prices=[96,78,85]
+d={item:price for item,price in zip(items,prices)}
+在items和prices中一对一匹配，然后送进去
+打包zip以少的列表为准

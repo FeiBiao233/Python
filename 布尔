@@ -1,0 +1,2 @@
+布尔 True False 可以转为整数计算
+如print(True+1) 输出2 自动的

@@ -1,0 +1,4 @@
+还有一个方便的小技巧 列表输出不要方括号
+先把列表类型改成字符串 再用join 
+ans=[str(ans[i]) for i in range(0,8)]
+print(' '.join(ans[7:0:-1]))

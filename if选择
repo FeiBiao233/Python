@@ -1,0 +1,27 @@
+python中使用严格缩进来表示代码结构
+
+a,b=map(int,input().split())
+if a>b:
+    print(True)
+elif a==b:
+    print('nmsl')
+elif a<b:
+    print(False)
+
+a,b=map(int,input().split())
+if a>b:
+    print(True)
+elif a==b:
+    print('nmsl')
+elif a<b:
+    print(False)
+
+注意点
+else是可选的
+记得加冒号
+严格缩进
+
+python 的方便写法
+a<=90 and a>= 80 等价于 80<=a<=90 (真TM方便)
+ print((True) if a>=b else (False))
+ 如果成功，则执行前面的，不成功执行后面的

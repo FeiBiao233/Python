@@ -1,0 +1,10 @@
+try:
+    pass
+    #将可能有问题的代码放在这里
+except BaseException as e: #这里写可能的出错，或者像这样所有的错误都会执行这个Except
+    print(e)
+else:
+    pass
+    #如果没有出错的话，执行else里面的语句
+finally:
+    这里的代码无论上面如何都会执行，常常用来释放申请的资源（？）
