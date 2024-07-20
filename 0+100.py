@@ -5,3 +5,4 @@ while a<=100:
     a+=1
 print(c)
 #修改测试12323342
+#God damn!!!
